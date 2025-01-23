@@ -1,0 +1,102 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Adjust height to fit the page */
+  background-color: #f8f9fa;
+  padding: 40px 20px; /* Adjust padding for responsive design */
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+h2 {
+  font-size: 3rem; /* Larger font size for better visibility */
+  margin-bottom: 30px;
+  color: #007bff;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Even spacing between skill categories */
+  gap: 40px; /* Increase gap for better spacing */
+  width: 100%;
+}
+
+.skill-category {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Adjust padding for better content spacing */
+  flex: 1 1 300px; /* Flexbox setting for responsive width */
+  max-width: 350px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h3 {
+  font-size: 1.8rem; /* Slightly larger category titles */
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.skill-category ul {
+  display: grid; /* Use grid for a row/column layout */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust for responsive layout */
+  gap: 20px; /* Add space between items */
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.skill-category li {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center content */
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.skill-category .skill-icon-box {
+  width: 90px; /* Increase size for larger icons */
+  height: 90px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 60px; /* Larger icons */
+  color: #007bff;
+}
+
+.skill-category .skill-icon-box:hover .icon {
+  color: #0056b3; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-category {
+    width: 90%; /* Full width on small screens */
+  }
+}
