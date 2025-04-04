@@ -1,0 +1,56 @@
+.introduction-container {
+  display: flex;
+  justify-content: left; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  height: 80%vh; /* Full height for the introduction section */
+  position: relative;
+}
+
+.background-image {
+  background: url("../images/image\ 3.jpg") no-repeat center center; /* Your background image */
+  background-size: cover;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  display: flex; /* Change to flex */
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  justify-content: flex-start; /* Align items to the top */
+  position: relative;
+  padding-top: 185px; /* Add padding to push the image down */
+}
+
+.profile-picture {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: -25%;
+  top: -8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+  text-align: left; /* Align text to the left */
+  color: #ffffff; /* Text color */
+  position: relative;
+  left: -11rem;
+  bottom: 11rem;
+  z-index: 2;
+  margin-top: 70px; /* Adjust margin to position text */
+  padding-left: 20px; /* Add padding to move text slightly to the right */
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin: 10px 0; /* Adjust margin */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+  font-size: 2rem;
+  color: #001f3f;
+  margin: -15px 0 15px 0; /* Negative margin to pull it higher */
+}
