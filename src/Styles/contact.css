@@ -1,25 +1,22 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
-  height: 100vh;
-  background: #f0f0f0; /* Set the same background as the About Me section */
-  color: #ffffff; /* White text color */
-  text-align: center;
+  padding: 40px 20px; /* Ample padding for comfort */
+  min-height: 100vh; /* Use min-height for responsiveness */
+  background: #f0f0f0; /* Background for consistency */
+  color: #333; /* Dark text for better contrast */
+  text-align: center; /* Centered text for organization */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for a softer look */
 }
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  color: #ffffff; /* Ensure heading color is white */
+  color: #1c2b28; /* Ensure heading color is white */
 }
 
 .contact-info {
@@ -33,13 +30,14 @@ h2 {
 }
 
 .contact-info a {
-  color: #333333; /* Gold color for links */
+  color: #007bff; /* Gold color for links */
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-  color: #ffffff; /* White on hover */
+  color: #0056b3; /* White on hover */
+  text-decoration: none;
 }
 
 .contact-form {
@@ -68,11 +66,12 @@ h2 {
   border-radius: 4px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+  background-color: #ffffff;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #ffffff;
+  border-color: #007bff;
   outline: none;
 }
 
@@ -99,5 +98,20 @@ h2 {
 
   .contact-form {
     padding: 15px;
+  }
+  .contact-info {
+    font-size: 1rem; /* Slightly reduce font size */
+  }
+  .contact-info p {
+    font-size: 0.9rem; /* Smaller font size for paragraphs */
+  }
+
+  .contact-form {
+    padding: 15px; /* Reduce padding */
+    max-width: 100%; /* Allow full width */
+  }
+
+  .project-card {
+    height: auto; /* Allow height to adjust based on content */
   }
 }

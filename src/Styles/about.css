@@ -2,19 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height for the section */
+  min-height: 100vh; /* Use min-height for flexible height */
   background-color: #f5f5f5; /* Light gray background */
   color: #333333; /* Dark gray text color for readability */
-  padding: 0; /* Remove padding */
+  padding: 20px; /* Add some padding for smaller screens */
 }
 
 .about-container {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Slightly transparent white background */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
   border: 2px solid #ff007f; /* Bold pink border */
   border-radius: 8px; /* Rounded corners */
   padding: 40px; /* Padding inside the box */
@@ -36,6 +31,7 @@ h2 {
 .about-text {
   text-align: left; /* Left align text for paragraphs */
   font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
 }
 
 p {
@@ -54,15 +50,19 @@ p {
 
 .social-link {
   margin: 0 10px;
-  padding: 10px 20px;
-  background: #748ca7; /* Bold pink color */
+  padding: 12px 24px; /* Slightly larger padding for a bolder look */
+  background: #6ca0dc; /* Soft blue color */
   color: #ffffff; /* White text for links */
-  border-radius: 5px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 8px; /* Rounder corners for a playful feel */
+  font-family: "Montserrat", sans-serif; /* Fun font for a playful effect */
+  font-size: 1.2rem; /* Slightly larger font size */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
 }
 
 .social-link:hover {
   background: #0056b3; /* Darker shade of pink for hover effect */
+  transform: scale(1.1); /* Slightly scale up on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
 }
 
 .video-placeholder {
@@ -71,6 +71,42 @@ p {
   padding: 20px; /* Add padding for better appearance */
   border: 2px dashed #ff007f; /* Dashed border for the placeholder */
   border-radius: 8px; /* Rounded corners */
-  background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  background-color: rgba(255, 255, 255, 0.9); /* More opaque background for better visibility */
   color: #333; /* Dark text color */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+.video-placeholder:hover {
+  background-color: rgba(255, 220, 220, 0.9); /* Light pink background on hover */
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .about-container {
+    padding: 20px; /* Reduce padding for smaller containers */
+  }
+  h2 {
+    font-size: 2.2rem; /* Responsive font size for h2 */
+  }
+
+  .about-text {
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    font-size: 1.4rem; /* Adjust paragraph font size for smaller screens */
+    line-height: 1.6; /* Adjust line height for better readability */
+  }
+  .social-link {
+    padding: 10px 15px; /* Reduce padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for better readability */
+    margin: 0 5px; /* Reduce margin for smaller screens */
+  }
+  .video-placeholder {
+    padding: 15px; /* Reduce padding for smaller screens */
+    margin: 15px 0; /* Adjust margin for smaller screens */
+  }
 }

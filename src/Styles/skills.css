@@ -4,47 +4,63 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Adjust height to fit the page */
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Soft light background */
   padding: 40px 20px; /* Adjust padding for responsive design */
   margin: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  border-radius: 10px; /* Rounded corners for a softer feel */
 }
 
 h2 {
-  font-size: 3rem; /* Larger font size for better visibility */
-  margin-bottom: 30px;
-  color: #007bff;
-  text-align: center;
+  font-size: 2.8rem; /* Slightly smaller for balance */
+  margin-bottom: 20px; /* Reduced margin for a cleaner look */
+  color: #007bff; /* Bright blue for emphasis */
+  text-align: center; /* Centered text for a unified appearance */
+  font-weight: 600; /* Semi-bold for better readability */
+  text-transform: capitalize; /* Capitalize for a polished look */
+  letter-spacing: 1px; /* Slightly increased letter spacing for elegance */
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping */
   justify-content: center; /* Center content */
-  gap: 40px; /* Increase gap for better spacing */
+  gap: 30px; /* Adjust gap for better spacing */
   width: 100%;
+  padding: 20px; /* Add padding for better structure */
+  background-color: rgba(248, 249, 250, 0.9); /* Soft background color for contrast */
+  border-radius: 8px; /* Rounded corners for a gentle feel */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skill-category {
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff; /* Clean white background */
+  border-radius: 10px; /* Slightly increased radius for a softer look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
   padding: 30px; /* Adjust padding for better content spacing */
-  flex: 0 1 calc(50% - 40px); /* Adjust for two columns */
+  flex: 0 1 calc(50% - 40px); /* Two columns */
   max-width: 350px; /* Ensure max width */
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Include shadow transition */
   box-sizing: border-box; /* Include padding in width */
+  text-align: center; /* Center align text for better organization */
 }
 
 .skill-category:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ensure smooth transitions */
 }
 
 .skill-category h3 {
-  font-size: 1.8rem; /* Slightly larger category titles */
-  margin-bottom: 20px;
-  color: #007bff;
+  font-size: 1.9rem; /* Slightly larger for better emphasis */
+  margin-bottom: 15px; /* Reduced margin for a cleaner look */
+  color: #007bff; /* Bright blue for visibility */
+  font-weight: 600; /* Semi-bold for added emphasis */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+.skill-category:hover h3 {
+  color: #0056b3; /* Darker shade on hover for contrast */
 }
 
 .skill-category ul {
@@ -60,30 +76,36 @@ h2 {
 
 .skill-category li {
   display: flex;
-  flex-direction: row; /* Stack icon and text vertically */
-  align-items: center; /* Center content */
-  text-align: center;
+  flex-direction: row; /* Stack icon and text horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: left; /* Left align text for better readability */
   font-size: 1rem;
   color: #555;
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 6px; /* Slightly rounded corners */
+  transition: background 0.2s ease; /* Smooth background transition */
+}
+.skill-category li:hover {
+  background: rgba(0, 123, 255, 0.1); /* Light blue background on hover for emphasis */
 }
 
 .skill-category .skill-icon-box {
-  width: 90px; /* Increase size for larger icons */
-  height: 90px;
-  margin-bottom: 10px;
+  width: 70px; /* Size for larger icons */
+  height: 70px;
+  margin-bottom: 10px; /* Space between icon and text */
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-color: #f0f0f0; /* Light background for contrast */
+  border-radius: 50%; /* Circular shape */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for depth */
+  transition: background 0.3s ease, transform 0.3s ease;
 }
-
 .icon {
-  font-size: 60px; /* Larger icons */
+  font-size: 50px; /* Larger icons */
   color: #007bff;
+  transition: color 0.3s ease;
 }
 
 .skill-category .skill-icon-box:hover .icon {
@@ -104,4 +126,17 @@ h2 {
     flex: 1 1 90%; /* Full width on small screens */
     max-width: none; /* Remove max width */
   }
+  
+  #skills {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+  .skills-container {
+    gap: 20px; /* Reduce gap on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  .skill-category {
+    flex: 0 1 calc(100% - 20px); /* Stack on smaller screens */
+    max-width: none; /* Remove max width for better flexibility */
+  }
 }
+
