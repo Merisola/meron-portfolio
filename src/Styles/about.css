@@ -21,13 +21,6 @@
   justify-content: center; /* Center content vertically */
 }
 
-h2 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-  text-align: center; /* Center align the heading */
-  color: #444444; /* Charcoal for the heading */
-}
-
 .about-text {
   text-align: left; /* Left align text for paragraphs */
   font-family: "Roboto", sans-serif;

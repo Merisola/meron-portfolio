@@ -10,7 +10,7 @@ import Introduction from './Components/Introduction';
 
 const App = () => {
   return (
-    <div>
+    <div className="main">
       <Header />
       <Introduction />
       <About />

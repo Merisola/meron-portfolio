@@ -1,18 +1,18 @@
 import React from "react";
-import "../Styles/introduction.css"; // Ensure you create a corresponding CSS file
-import myPicture from "../images/photo.jpg";
+import "../Styles/introduction.css"; 
+import My_Profile from"../images/photo.jpg";
 
 const Introduction = () => {
   return (
-    <div className="introduction-container">
-      <div className="background-image">
-        <img src={myPicture} alt="My Profile" className="profile-picture" />
-        <div className="intro-text">
-          <h2>Meron Solomon Tsegay</h2>
-          <h3>Full-Stack Developer| Virtual Assistant| Biomecial Engineer</h3>
-        </div>
+    <section className="introduction-container">
+      <div className="profile-picture">
+        <img src={My_Profile} alt="My Profile" />
       </div>
-    </div>
+      <div className="intro-text">
+        <h2>Meron Solomon Tsegay</h2>
+        <h3>Full-Stack Developer| Virtual Assistant| Biomecial Engineer</h3>
+      </div>
+    </section>
   );
 };
 

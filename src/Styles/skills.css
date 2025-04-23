@@ -12,15 +12,6 @@
   border-radius: 10px; /* Rounded corners for a softer feel */
 }
 
-h2 {
-  font-size: 2.8rem; /* Slightly smaller for balance */
-  margin-bottom: 20px; /* Reduced margin for a cleaner look */
-  color: #007bff; /* Bright blue for emphasis */
-  text-align: center; /* Centered text for a unified appearance */
-  font-weight: 600; /* Semi-bold for better readability */
-  text-transform: capitalize; /* Capitalize for a polished look */
-  letter-spacing: 1px; /* Slightly increased letter spacing for elegance */
-}
 
 .skills-container {
   display: flex;

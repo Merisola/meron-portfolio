@@ -1,87 +1,54 @@
 .introduction-container {
-  display: flex;
-  margin: 0;
-  justify-content: left; /* Align items to the left */
-  align-items: center; /* Center items vertically */
-  height: 100vh; /* Full height for the introduction section */
-  position: relative;
-  padding: 20px; /* Add padding for spacing */
-  background-color: #f0f0f0; /* Example background color */
-  overflow: hidden; /* Prevent overflow */
-}
-
-.background-image {
-  background: url("../images/image 3.jpg") no-repeat center center; /* Your background image */
+  background-image: url(../images/desk.jpg);
   background-size: cover;
-  width: 100%; /* Full width of the container */
-  height: 100vh; /* Full height for the viewport */
-  display: flex; /* Use flexbox */
-  flex-direction: column;
-  align-items: center; /* Center align items */
-  justify-content: flex-start; /* Align items to the top */
-  position: relative;
-  padding-top: 185px; /* Add padding to push the image down */
-  overflow: hidden; /* Prevent overflow */
+  background-position: center;
+  padding-top: 80px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.profile-picture {
-  width: 40%;
-  height: 78%;
-  position: relative;
-  left: -23%;
-  top: -4rem;
-  border-radius: 50%;
-  object-fit: cover;
-  z-index: 2;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+.introduction-container div {
+  width: 49%;
 }
-
+.introduction-container img {
+  border-radius: 130px 130px;
+  margin-left: 10px;
+  width: 100%;
+  margin-top: -54px;
+}
 .intro-text {
-  text-align: left; /* Align text to the left */
-  color: #ffffff; /* Text color */
-  position: relative; /* Use relative positioning */
-  margin-top: 70px; /* Adjust margin to position text */
-  padding-left: 20px; /* Add padding to move text slightly to the right */
-  font-family: "Montserrat", sans-serif;
-  left: -11rem;
-  bottom: 11rem;
-  z-index: 2; /* Ensure text is above other elements */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
 }
-
-h2 {
-  font-size: 4rem; /* Set the primary font size */
-  margin: 10px 0; /* Adjust margin */
-  font-weight: 700; /* Bold font weight */
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+.intro-text h2,
+.intro-text h3 {
+  width: 100%;
+  padding: 19px;
 }
-
-h3 {
-  font-size: 2rem; /* Standard font size for h3 */
-  color: #ffffff; /* Text color */
-  font-weight: 500; /* Medium font weight */
-  margin: 0 0 15px 0; /* Adjust margin for spacing without negative values */ /* Negative margin to pull it higher */
+.intro-text h2 {
+  text-align: center;
+  font-size: 334%;
+  margin-top: 81px;
+}
+.intro-text h3 {
+  font-size: 135%;
 }
 
 @media (max-width: 768px) {
-  .introduction-container {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center items horizontally */
+  .intro-text h2 {
+    text-align: center;
+    font-size: 250%;
   }
-  .background-image {
-    padding-top: 100px; /* Adjust padding for smaller screens */
+  .intro-text h3 {
+    font-size: 147%;
+    font-weight: 500;
   }
-  .intro-text {
-    margin-top: 40px; /* Adjust margin for smaller screens */
-    padding-left: 10px; /* Less padding on smaller screens */
-    font-size: 1rem; /* Adjust font size for better readability */
-  }
-  h2 {
-    font-size: 2.5rem; /* Responsive font size for h2 */
-  }
-
-  h3 {
-    font-size: 1.5rem; /* Responsive font size for h3 */
-    margin: 5px 0; /* Adjust margin for smaller screens */
+  .intro-text h2,
+  .intro-text h3 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
   }
 }
